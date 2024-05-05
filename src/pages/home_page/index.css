@@ -1,0 +1,100 @@
+.homepage {
+  /* width: 100vw;
+  height: 80vh; */
+}
+
+.profile {
+  margin: 3rem auto 0rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.profile-left {
+  width: 40rem;
+}
+
+.profile-right {
+  margin-left: 3rem;
+  width: 20rem;
+}
+
+.profile-title {
+  font-family: inherit;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.profile-image-large {
+  width: 15rem;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.profile-image-small {
+  width: 19rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-icons {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+
+.icon-git {
+  width: 4rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.icon-git:hover {
+  cursor: pointer;
+  width: 4.5rem;
+  transition: .1s;
+}
+
+.icon-linked {
+  width: 4rem;
+  margin-left: 1rem;
+  transition: .1s;
+}
+
+.icon-linked:hover {
+  cursor: pointer;
+  width: 4.5rem;
+  transition: .1s;
+}
+
+@media (min-width: 801px) {
+  .profile-image-small {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .profile {
+    width: 20rem;
+    height: auto;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .profile-left {
+    max-width: 20rem;
+  }
+  
+  .profile-right {
+    max-width: 20rem;
+  }
+  
+  .profile-image-large {
+    display: none;
+  }
+}
