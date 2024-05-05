@@ -3,7 +3,7 @@ import NavBar from './components/navbar';
 import HomePage from './pages/home_page';
 import ProjectsPage from './pages/projects_page';
 import GalleryPage from './pages/gallery_page';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -17,13 +17,11 @@ function App() {
   return (
     <>
       <NavBar routes={routes}></NavBar>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/projects" element={<ProjectsPage />}></Route>
-          <Route path="/gallery" element={<GalleryPage />}></Route>
-        </Routes>
-      </Router >
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/projects" element={<ProjectsPage />}></Route>
+        <Route path="/gallery" element={<GalleryPage />}></Route>
+      </Routes>
     </>
 
   );
